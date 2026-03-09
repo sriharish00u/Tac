@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Awareness Hub – Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Traffic Awareness Hub</h1>
+        <p>Educational Resource for Safer Roads</p>
+    </header>
+
+    <nav>
+        <!-- same nav -->
+    </nav>
+
+    <section>
+        <h2>Road Safety Quiz</h2>
+        <p>Select the correct answer for each question. Submit to view your score (8 questions).</p>
+
+        <div id="quiz">
+            <div class="question">
+                <p>1. Red traffic light means:</p>
+                <label><input type="radio" name="q1" value="a"> Go</label>
+                <label><input type="radio" name="q1" value="b"> Stop</label>
+                <label><input type="radio" name="q1" value="c"> Caution</label>
+            </div>
+
+            <div class="question">
+                <p>2. Helmet is mandatory for:</p>
+                <label><input type="radio" name="q2" value="a"> Optional</label>
+                <label><input type="radio" name="q2" value="b"> Two-wheeler riders</label>
+                <label><input type="radio" name="q2" value="c"> Only highways</label>
+            </div>
+
+            <div class="question">
+                <p>3. Before crossing a road, you should:</p>
+                <label><input type="radio" name="q3" value="a"> Run quickly</label>
+                <label><input type="radio" name="q3" value="b"> Stop, look left-right-left</label>
+                <label><input type="radio" name="q3" value="c"> Use your phone</label>
+            </div>
+
+            <div class="question">
+                <p>4. Drinking and driving is:</p>
+                <label><input type="radio" name="q4" value="a"> Safe in moderation</label>
+                <label><input type="radio" name="q4" value="b"> Dangerous and illegal</label>
+                <label><input type="radio" name="q4" value="c"> Allowed after food</label>
+            </div>
+
+            <div class="question">
+                <p>5. Seatbelts reduce injury risk by approximately:</p>
+                <label><input type="radio" name="q5" value="a"> 10%</label>
+                <label><input type="radio" name="q5" value="b"> 50%</label>
+                <label><input type="radio" name="q5" value="c"> 0%</label>
+            </div>
+
+            <div class="question">
+                <p>6. Zebra crossing is meant for:</p>
+                <label><input type="radio" name="q6" value="a"> Vehicles</label>
+                <label><input type="radio" name="q6" value="b"> Pedestrians</label>
+                <label><input type="radio" name="q6" value="c"> Animals only</label>
+            </div>
+
+            <div class="question">
+                <p>7. Using mobile while driving increases crash risk by:</p>
+                <label><input type="radio" name="q7" value="a"> Slightly</label>
+                <label><input type="radio" name="q7" value="b"> About four times</label>
+                <label><input type="radio" name="q7" value="c"> No increase</label>
+            </div>
+
+            <div class="question">
+                <p>8. In school zones, speed limit is usually:</p>
+                <label><input type="radio" name="q8" value="a"> 60 km/h</label>
+                <label><input type="radio" name="q8" value="b"> 20–30 km/h</label>
+                <label><input type="radio" name="q8" value="c"> No limit</label>
+            </div>
+
+            <button onclick="checkQuiz()">Submit Quiz</button>
+            <div id="quiz-result"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Traffic Awareness Hub | Safer Roads for All</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
