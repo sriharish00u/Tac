@@ -3,46 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Traffic Awareness Hub - Educational Resource for Safer Roads in Salem, Tamil Nadu and across India">
     <title>Traffic Awareness Hub – Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Traffic Awareness Hub</h1>
+        <h1>🚦 Traffic Awareness Hub</h1>
         <p>Educational Resource for Safer Roads – Salem & Tamil Nadu Focus</p>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="page2.html">Basics</a>
-        <a href="page3.html">Practices</a>
-        <a href="page4.html">Risks</a>
-        <a href="page5.html">Posters 1</a>
-        <a href="page6.html">Posters 2</a>
-        <a href="page7.html">Posters 3</a>
-        <a href="page8.html">Slogans</a>
-        <a href="page9.html">Quiz</a>
-        <a href="page10.html">Note</a>
+        <div class="nav-container">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="page2.html">📚 Basics</a></li>
+                <li><a href="page3.html">✅ Practices</a></li>
+                <li><a href="page4.html">⚠️ Risks</a></li>
+                <li><a href="page5.html">🖼️ Posters 1</a></li>
+                <li><a href="page6.html">🖼️ Posters 2</a></li>
+                <li><a href="page7.html">🖼️ Posters 3</a></li>
+                <li><a href="page8.html">📢 Slogans</a></li>
+                <li><a href="page9.html">❓ Quiz</a></li>
+                <li><a href="page10.html">📝 Note</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section>
-        <h2>Welcome to Traffic Awareness</h2>
-        <p>Road safety is a shared responsibility. This platform provides focused educational content to promote responsible behaviour among drivers, riders, pedestrians, and students in Tamil Nadu and across India.</p>
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to Traffic Awareness</h2>
+            <p>Road safety is a shared responsibility. This platform provides focused educational content to promote responsible behaviour among drivers, riders, pedestrians, and students in Tamil Nadu and across India.</p>
+            <p style="margin-top: 1rem; font-weight: 500;">🌍 Stay Safe | 🚗 Drive Responsibly | 👨‍👩‍👧‍👦 Protect Everyone</p>
+        </section>
 
-        <h2>Core Slogans</h2>
-        <ul class="slogans">
-            <li>Helmet on head – life stays ahead.</li>
-            <li>Speed thrills but kills – slow down.</li>
-            <li>Don't text and drive – arrive alive.</li>
-            <li>No belt, no travel – click it or regret.</li>
-            <li>Never drink and drive – choose life.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>🔑 Key Safety Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1.5L+</div>
+                    <div class="stat-label">Road Accidents/Year in India</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Lives Lost Annually</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Caused by Human Error</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4X</div>
+                    <div class="stat-label">Risk with Mobile Use</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📣 Core Slogans</h2>
+            <ul class="slogans-grid">
+                <li>🪖 Helmet on head – life stays ahead.</li>
+                <li>⚡ Speed thrills but kills – slow down.</li>
+                <li>📱 Don't text and drive – arrive alive.</li>
+                <li>🎗️ No belt, no travel – click it or regret.</li>
+                <li>🍺 Never drink and drive – choose life.</li>
+                <li>🚶 Use zebra crossing – pedestrian's right.</li>
+                <li>🏫 School zone – drive slow, stay alert.</li>
+                <li>🔔 Give way to emergency vehicles.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🎯 Quick Links</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>Learn Basics</h3>
+                    <p>Understand fundamental traffic rules and signals.</p>
+                    <a href="page2.html" class="btn" style="margin-top: 1rem; padding: 0.75rem 1.5rem; font-size: 0.9rem;">Explore</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>Safety Practices</h3>
+                    <p>Follow essential safety practices every day.</p>
+                    <a href="page3.html" class="btn" style="margin-top: 1rem; padding: 0.75rem 1.5rem; font-size: 0.9rem;">Explore</a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❓</div>
+                    <h3>Take Quiz</h3>
+                    <p>Test your knowledge with our interactive quiz.</p>
+                    <a href="page9.html" class="btn" style="margin-top: 1rem; padding: 0.75rem 1.5rem; font-size: 0.9rem;">Start Quiz</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Traffic Awareness Hub | Safer Roads for All</p>
+        <p>🚦 Traffic Awareness Hub | Safer Roads for All</p>
+        <p style="font-size: 0.85rem; margin-top: 0.5rem;">Stay Safe, Save Lives</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
+
