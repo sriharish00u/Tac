@@ -42,67 +42,115 @@
     <main>
         <section>
             <h2>❓ Road Safety Quiz</h2>
-            <p>Test your knowledge of road safety rules! Select the correct answer for each question and submit to view your score.</p>
+            <p>Test your knowledge of road safety rules! Select the correct answer for each question and submit to view your score. This quiz has 8 questions covering important traffic rules and safety practices.</p>
 
             <div id="quiz" class="quiz-container">
                 <div class="question">
-                    <p>1. 🚦 Red traffic light means:</p>
-                    <label><input type="radio" name="q1" value="a"> Go</label>
-                    <label><input type="radio" name="q1" value="b"> Stop</label>
-                    <label><input type="radio" name="q1" value="c"> Caution</label>
+                    <p>1. 🚦 What does a red traffic light mean?</p>
+                    <label><input type="radio" name="q1" value="a"> Go quickly</label>
+                    <label><input type="radio" name="q1" value="b"> Stop completely</label>
+                    <label><input type="radio" name="q1" value="c"> Slow down and proceed with caution</label>
                 </div>
 
                 <div class="question">
                     <p>2. 🪖 Helmet is mandatory for:</p>
-                    <label><input type="radio" name="q2" value="a"> Optional</label>
-                    <label><input type="radio" name="q2" value="b"> Two-wheeler riders</label>
-                    <label><input type="radio" name="q2" value="c"> Only highways</label>
+                    <label><input type="radio" name="q2" value="a"> Only long distance travel</label>
+                    <label><input type="radio" name="q2" value="b"> All two-wheeler riders and pillion riders</label>
+                    <label><input type="radio" name="q2" value="c"> Only the rider, not the pillion</label>
                 </div>
 
                 <div class="question">
                     <p>3. 🚶 Before crossing a road, you should:</p>
-                    <label><input type="radio" name="q3" value="a"> Run quickly</label>
-                    <label><input type="radio" name="q3" value="b"> Stop, look left-right-left</label>
-                    <label><input type="radio" name="q3" value="c"> Use your phone</label>
+                    <label><input type="radio" name="q3" value="a"> Run quickly to cross faster</label>
+                    <label><input type="radio" name="q3" value="b"> Stop, look left-right-left, then cross</label>
+                    <label><input type="radio" name="q3" value="c"> Use your phone to check for vehicles</label>
                 </div>
 
                 <div class="question">
                     <p>4. 🍺 Drinking and driving is:</p>
-                    <label><input type="radio" name="q4" value="a"> Safe in moderation</label>
+                    <label><input type="radio" name="q4" value="a"> Safe if you only have one drink</label>
                     <label><input type="radio" name="q4" value="b"> Dangerous and illegal</label>
-                    <label><input type="radio" name="q4" value="c"> Allowed after food</label>
+                    <label><input type="radio" name="q4" value="c"> Allowed if you feel okay to drive</label>
                 </div>
 
                 <div class="question">
-                    <p>5. 🎗️ Seatbelts reduce injury risk by approximately:</p>
+                    <p>5. 🎗️ Seatbelts can reduce injury risk by approximately:</p>
                     <label><input type="radio" name="q5" value="a"> 10%</label>
-                    <label><input type="radio" name="q5" value="b"> 50%</label>
-                    <label><input type="radio" name="q5" value="c"> 0%</label>
+                    <label><input type="radio" name="q5" value="b"> About 50%</label>
+                    <label><input type="radio" name="q5" value="c"> They don't really help</label>
                 </div>
 
                 <div class="question">
                     <p>6. 🦓 Zebra crossing is meant for:</p>
-                    <label><input type="radio" name="q6" value="a"> Vehicles</label>
-                    <label><input type="radio" name="q6" value="b"> Pedestrians</label>
-                    <label><input type="radio" name="q6" value="c"> Animals only</label>
+                    <label><input type="radio" name="q6" value="a"> Vehicles to park</label>
+                    <label><input type="radio" name="q6" value="b"> Pedestrians to cross safely</label>
+                    <label><input type="radio" name="q6" value="c"> Only for animals</label>
                 </div>
 
                 <div class="question">
-                    <p>7. 📱 Using mobile while driving increases crash risk by:</p>
-                    <label><input type="radio" name="q7" value="a"> Slightly</label>
+                    <p>7. 📱 Using mobile phone while driving increases crash risk by:</p>
+                    <label><input type="radio" name="q7" value="a"> A little bit</label>
                     <label><input type="radio" name="q7" value="b"> About four times</label>
-                    <label><input type="radio" name="q7" value="c"> No increase</label>
+                    <label><input type="radio" name="q7" value="c"> It doesn't increase risk at all</label>
                 </div>
 
                 <div class="question">
                     <p>8. 🏫 In school zones, speed limit is usually:</p>
                     <label><input type="radio" name="q8" value="a"> 60 km/h</label>
-                    <label><input type="radio" name="q8" value="b"> 20–30 km/h</label>
-                    <label><input type="radio" name="q8" value="c"> No limit</label>
+                    <label><input type="radio" name="q8" value="b"> 20-30 km/h</label>
+                    <label><input type="radio" name="q8" value="c"> There is no specific limit</label>
                 </div>
 
                 <button class="btn quiz-btn" onclick="checkQuiz()">Submit Quiz</button>
                 <div id="quiz-result"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📊 Quiz Answers & Explanations</h2>
+            <p>Learn from the quiz! Here are the correct answers with explanations:</p>
+            
+            <div class="cards-grid" style="margin-top: 1.5rem;">
+                <div class="card">
+                    <h3>1. 🚦 Red Light</h3>
+                    <p><strong>Answer: Stop completely</strong><br>
+                    Red means STOP. Never cross when the light is red, even if the road appears empty.</p>
+                </div>
+                <div class="card">
+                    <h3>2. 🪖 Helmet</h3>
+                    <p><strong>Answer: All two-wheeler riders and pillion riders</strong><br>
+                    Both rider and pillion must wear helmets. It's mandatory by law.</p>
+                </div>
+                <div class="card">
+                    <h3>3. 🚶 Crossing Road</h3>
+                    <p><strong>Answer: Stop, look left-right-left</strong><br>
+                    Always stop at the edge, look both ways, and cross only when safe.</p>
+                </div>
+                <div class="card">
+                    <h3>4. 🍺 Drink Driving</h3>
+                    <p><strong>Answer: Dangerous and illegal</strong><br>
+                    Alcohol impairs judgment. Even small amounts can be dangerous. It's a criminal offense.</p>
+                </div>
+                <div class="card">
+                    <h3>5. 🎗️ Seatbelt</h3>
+                    <p><strong>Answer: About 50%</strong><br>
+                    Seatbelts reduce the risk of death in front-seat passengers by 45-50%.</p>
+                </div>
+                <div class="card">
+                    <h3>6. 🦓 Zebra Crossing</h3>
+                    <p><strong>Answer: Pedestrians to cross safely</strong><br>
+                    Vehicles must stop for pedestrians at zebra crossings.</p>
+                </div>
+                <div class="card">
+                    <h3>7. 📱 Mobile Phone</h3>
+                    <p><strong>Answer: About four times</strong><br>
+                    Using phone while driving increases crash risk by approximately 4 times.</p>
+                </div>
+                <div class="card">
+                    <h3>8. 🏫 School Zone</h3>
+                    <p><strong>Answer: 20-30 km/h</strong><br>
+                    Reduced speed protects children who may suddenly cross the road.</p>
+                </div>
             </div>
         </section>
     </main>
