@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 header {
     background: var(--gradient-secondary);
-    padding: 2.5rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -66,12 +66,44 @@ header::before {
     100% { transform: rotate(360deg); }
 }
 
-header h1 {
-    color: var(--white);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header-text {
+    text-align: left;
+}
+
+header h1 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h2 {
+    color: rgba(255,255,255,0.95);
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    font-weight: 500;
     text-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
@@ -522,7 +554,7 @@ footer {
     margin-top: 3rem;
 }
 
-footer p {
+footer h1, h2 {
     color: rgba(255,255,255,0.8);
     font-size: 1rem;
 }
