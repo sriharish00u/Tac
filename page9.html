@@ -29,9 +29,7 @@
                 <li><a href="page2.html">📚 Basics</a></li>
                 <li><a href="page3.html">✅ Practices</a></li>
                 <li><a href="page4.html">⚠️ Risks</a></li>
-                <li><a href="page5.html">🖼️ Posters 1</a></li>
-                <li><a href="page6.html">🖼️ Posters 2</a></li>
-                <li><a href="page7.html">🖼️ Posters 3</a></li>
+                <li><a href="page5.html">🖼️ Posters</a></li>
                 <li><a href="page8.html">📢 Slogans</a></li>
                 <li><a href="page9.html">❓ Quiz</a></li>
                 <li><a href="page10.html">📝 Note</a></li>
@@ -41,21 +39,25 @@
 
     <main>
         <section>
-            <h2>❓ Road Safety Quiz</h2>
-            <p>Test your knowledge of road safety rules! Select the correct answer for each question and submit to view your score. This quiz has 8 questions covering important traffic rules and safety practices.</p>
+            <h2>❓ Test Your Knowledge – Road Safety Quiz</h2>
+            <p><strong>How much do you know about road safety?</strong> Take this quiz to test your knowledge! Learn and remember these important traffic rules to keep yourself and others safe on the road.</p>
+            
+            <div class="info-box" style="margin-top: 1rem; background: #e7f3ff;">
+                <strong>💡 Why Take This Quiz?</strong> Understanding traffic rules isn't just about passing tests – it's about saving lives. Every correct answer could help you make a life-saving decision on the road.
+            </div>
 
             <div id="quiz" class="quiz-container">
                 <div class="question">
-                    <p>1. 🚦 What does a red traffic light mean?</p>
+                    <p>1. 🚦 What does a RED traffic light mean?</p>
                     <label><input type="radio" name="q1" value="a"> Go quickly</label>
-                    <label><input type="radio" name="q1" value="b"> Stop completely</label>
+                    <label><input type="radio" name="q1" value="b"> Stop completely behind the stop line</label>
                     <label><input type="radio" name="q1" value="c"> Slow down and proceed with caution</label>
                 </div>
 
                 <div class="question">
                     <p>2. 🪖 Helmet is mandatory for:</p>
                     <label><input type="radio" name="q2" value="a"> Only long distance travel</label>
-                    <label><input type="radio" name="q2" value="b"> All two-wheeler riders and pillion riders</label>
+                    <label><input type="radio" name="q2" value="b"> All two-wheeler riders AND pillion riders</label>
                     <label><input type="radio" name="q2" value="c"> Only the rider, not the pillion</label>
                 </div>
 
@@ -76,7 +78,7 @@
                 <div class="question">
                     <p>5. 🎗️ Seatbelts can reduce injury risk by approximately:</p>
                     <label><input type="radio" name="q5" value="a"> 10%</label>
-                    <label><input type="radio" name="q5" value="b"> About 50%</label>
+                    <label><input type="radio" name="q5" value="b"> About 45-50%</label>
                     <label><input type="radio" name="q5" value="c"> They don't really help</label>
                 </div>
 
@@ -101,30 +103,149 @@
                     <label><input type="radio" name="q8" value="c"> There is no specific limit</label>
                 </div>
 
-                <button class="btn quiz-btn" onclick="checkQuiz()">Submit Quiz</button>
+                <div class="question">
+                    <p>9. ⚡ What should you do when you see a YELLOW traffic light?</p>
+                    <label><input type="radio" name="q9" value="a"> Speed up to cross quickly</label>
+                    <label><input type="radio" name="q9" value="b"> Stop if you can do so safely</label>
+                    <label><input type="radio" name="q9" value="c"> Ignore it and keep going</label>
+                </div>
+
+                <div class="question">
+                    <p>10. 🛣️ When changing lanes, you should:</p>
+                    <label><input type="radio" name="q10" value="a"> Change quickly without signaling</label>
+                    <label><input type="radio" name="q10" value="b"> Use indicators and check mirrors</label>
+                    <label><input type="radio" name="q10" value="c"> Just change lanes, no need to check</label>
+                </div>
+
+                <div class="question">
+                    <p>11. 🚑 What should you do when an ambulance is behind you?</p>
+                    <label><input type="radio" name="q11" value="a"> Ignore it and keep driving</label>
+                    <label><input type="radio" name="q11" value="b"> Move to the left and stop to let it pass</label>
+                    <label><input type="radio" name="q11" value="c"> Speed up to get out of its way</label>
+                </div>
+
+                <div class="question">
+                    <p>12. 🌙 When driving at night, you should:</p>
+                    <label><input type="radio" name="q12" value="a"> Use high beam headlights always</label>
+                    <label><input type="radio" name="q12" value="b"> Use low beam when approaching other vehicles</label>
+                    <label><input type="radio" name="q12" value="c"> Turn off all lights to save battery</label>
+                </div>
+
+                <div class="question">
+                    <p>13. 👶 Children should always be supervised near roads because:</p>
+                    <label><input type="radio" name="q13" value="a"> They are small and hard to see</label>
+                    <label><input type="radio" name="q13" value="b"> They don't understand danger like adults</label>
+                    <label><input type="radio" name="q13" value="c"> Both A and B</label>
+                </div>
+
+                <div class="question">
+                    <p>14. 🏍️ On a two-wheeler, how many people should ride at a time?</p>
+                    <label><input type="radio" name="q14" value="a"> As many as fit comfortably</label>
+                    <label><input type="radio" name="q14" value="b"> Only the number of people the vehicle is designed for</label>
+                    <label><input type="radio" name="q14" value="c"> Two people maximum always</label>
+                </div>
+
+                <div class="question">
+                    <p>15. 🔧 Regular vehicle maintenance helps:</p>
+                    <label><input type="radio" name="q15" value="a"> Only with fuel efficiency</label>
+                    <label><input type="radio" name="q15" value="b"> Prevent accidents and breakdowns</label>
+                    <label><input type="radio" name="q15" value="c"> It doesn't really matter</label>
+                </div>
+
+                <div class="question">
+                    <p>16. 🛑 What is the minimum following distance you should maintain?</p>
+                    <label><input type="radio" name="q16" value="a"> 1 second</label>
+                    <label><input type="radio" name="q16" value="b"> At least 3 seconds</label>
+                    <label><input type="radio" name="q16" value="c"> Half a second is enough</label>
+                </div>
+
+                <div class="question">
+                    <p>17. 🏥 In case of a road accident, you should:</p>
+                    <label><input type="radio" name="q17" value="a"> Drive away quickly</label>
+                    <label><input type="radio" name="q17" value="b"> Call emergency services and help if safe</label>
+                    <label><input type="radio" name="q17" value="c"> Take photos first</label>
+                </div>
+
+                <div class="question">
+                    <p>18. 🌧️ During heavy rain, you should:</p>
+                    <label><input type="radio" name="q18" value="a"> Drive at normal speed</label>
+                    <label><input type="radio" name="q18" value="b"> Reduce speed and increase following distance</label>
+                    <label><input type="radio" name="q18" value="c"> Use high beam headlights</label>
+                </div>
+
+                <div class="question">
+                    <p>19. 🚸 What does a flashing yellow signal mean at a pedestrian crossing?</p>
+                    <label><input type="radio" name="q19" value="a"> Stop immediately</label>
+                    <label><input type="radio" name="q19" value="b"> Pedestrians have right of way, proceed with caution</label>
+                    <label><input type="radio" name="q19" value="c"> No crossing allowed</label>
+                </div>
+
+                <div class="question">
+                    <p>20. 🛑 When police signal you to stop, you should:</p>
+                    <label><input type="radio" name="q20" value="a"> Keep driving and ignore</label>
+                    <label><input type="radio" name="q20" value="b"> Stop immediately and follow instructions</label>
+                    <label><input type="radio" name="q20" value="c"> Argue with the officer</label>
+                </div>
+
+                <div class="question">
+                    <p>21. 🍺 What is the legal blood alcohol limit in India?</p>
+                    <label><input type="radio" name="q21" value="a"> 0.05%</label>
+                    <label><input type="radio" name="q21" value="b"> 0.03%</label>
+                    <label><input type="radio" name="q21" value="c"> 0.1%</label>
+                </div>
+
+                <div class="question">
+                    <p>22. 🚴 Cyclists should:</p>
+                    <label><input type="radio" name="q22" value="a"> Ride on the main road without care</label>
+                    <label><input type="radio" name="q22" value="b"> Use bike lanes when available and wear helmet</label>
+                    <label><input type="radio" name="q22" value="c"> Ride against traffic</label>
+                </div>
+
+                <div class="question">
+                    <p>23. ⛽ When your vehicle runs out of fuel on highway:</p>
+                    <label><input type="radio" name="q23" value="a"> Stop in the middle of the road</label>
+                    <label><input type="radio" name="q23" value="b"> Move to side and call for help</label>
+                    <label><input type="radio" name="q23" value="c"> Walk to find fuel</label>
+                </div>
+
+                <div class="question">
+                    <p>24. 👓 When driving, if you feel sleepy you should:</p>
+                    <label><input type="radio" name="q24" value="a"> Continue driving to reach destination</label>
+                    <label><input type="radio" name="q24" value="b"> Stop at a safe place and rest</label>
+                    <label><input type="radio" name="q24" value="c"> Drink coffee while driving</label>
+                </div>
+
+                <div class="question">
+                    <p>25. 📖 What should you do before starting a long journey?</p>
+                    <label><input type="radio" name="q25" value="a"> Nothing special</label>
+                    <label><input type="radio" name="q25" value="b"> Check vehicle, plan route, and rest well</label>
+                    <label><input type="radio" name="q25" value="c"> Drive fast to reach quickly</label>
+                </div>
+
+                <button class="btn quiz-btn" onclick="checkQuiz()">📝 Submit Quiz</button>
                 <div id="quiz-result"></div>
             </div>
         </section>
 
         <section>
-            <h2>📊 Quiz Answers & Explanations</h2>
-            <p>Learn from the quiz! Here are the correct answers with explanations:</p>
+            <h2>📊 Quiz Answers & Explanations – Learn From Your Answers</h2>
+            <p><strong>Knowledge is power!</strong> Understanding why each answer is correct helps you remember these life-saving rules forever.</p>
             
             <div class="cards-grid" style="margin-top: 1.5rem;">
                 <div class="card">
                     <h3>1. 🚦 Red Light</h3>
-                    <p><strong>Answer: Stop completely</strong><br>
+                    <p><strong>Answer: Stop completely behind the stop line</strong><br>
                     Red means STOP. Never cross when the light is red, even if the road appears empty.</p>
                 </div>
                 <div class="card">
                     <h3>2. 🪖 Helmet</h3>
-                    <p><strong>Answer: All two-wheeler riders and pillion riders</strong><br>
-                    Both rider and pillion must wear helmets. It's mandatory by law.</p>
+                    <p><strong>Answer: All two-wheeler riders AND pillion riders</strong><br>
+                    Both rider and pillion must wear helmets. It's mandatory by law and saves lives.</p>
                 </div>
                 <div class="card">
                     <h3>3. 🚶 Crossing Road</h3>
                     <p><strong>Answer: Stop, look left-right-left</strong><br>
-                    Always stop at the edge, look both ways, and cross only when safe.</p>
+                    Always stop at the edge, look both ways, and cross only when it is safe.</p>
                 </div>
                 <div class="card">
                     <h3>4. 🍺 Drink Driving</h3>
@@ -133,13 +254,13 @@
                 </div>
                 <div class="card">
                     <h3>5. 🎗️ Seatbelt</h3>
-                    <p><strong>Answer: About 50%</strong><br>
+                    <p><strong>Answer: About 45-50%</strong><br>
                     Seatbelts reduce the risk of death in front-seat passengers by 45-50%.</p>
                 </div>
                 <div class="card">
                     <h3>6. 🦓 Zebra Crossing</h3>
                     <p><strong>Answer: Pedestrians to cross safely</strong><br>
-                    Vehicles must stop for pedestrians at zebra crossings.</p>
+                    Vehicles must stop for pedestrians at zebra crossings. It's the law!</p>
                 </div>
                 <div class="card">
                     <h3>7. 📱 Mobile Phone</h3>
@@ -151,8 +272,102 @@
                     <p><strong>Answer: 20-30 km/h</strong><br>
                     Reduced speed protects children who may suddenly cross the road.</p>
                 </div>
+                <div class="card">
+                    <h3>9. ⚡ Yellow Light</h3>
+                    <p><strong>Answer: Stop if you can do so safely</strong><br>
+                    Yellow means get ready to stop. Only cross if you cannot stop safely.</p>
+                </div>
+                <div class="card">
+                    <h3>10. 🛣️ Changing Lanes</h3>
+                    <p><strong>Answer: Use indicators and check mirrors</strong><br>
+                    Always signal at least 30 meters before and check all mirrors and blind spots.</p>
+                </div>
+                <div class="card">
+                    <h3>11. 🚑 Emergency Vehicle</h3>
+                    <p><strong>Answer: Move to the left and stop to let it pass</strong><br>
+                    Move to the left edge, stop, and let emergency vehicles pass. It's the law!</p>
+                </div>
+                <div class="card">
+                    <h3>12. 🌙 Night Driving</h3>
+                    <p><strong>Answer: Use low beam when approaching other vehicles</strong><br>
+                    High beams blind oncoming drivers. Use low beams in traffic or when meeting vehicles.</p>
+                </div>
+                <div class="card">
+                    <h3>13. 👶 Child Safety</h3>
+                    <p><strong>Answer: Both A and B</strong><br>
+                    Children are small (hard to see) and don't understand danger. Always supervise them!</p>
+                </div>
+                <div class="card">
+                    <h3>14. 🏍️ Two-Wheeler Capacity</h3>
+                    <p><strong>Answer: Only the number of people the vehicle is designed for</strong><br>
+                    Overloading affects balance and control. Always follow the manufacturer's specifications.</p>
+                </div>
+                <div class="card">
+                    <h3>15. 🔧 Vehicle Maintenance</h3>
+                    <p><strong>Answer: Prevent accidents and breakdowns</strong><br>
+                    Regular maintenance of brakes, tires, lights, and mirrors is essential for safety.</p>
+                </div>
+                <div class="card">
+                    <h3>16. 🛑 Following Distance</h3>
+                    <p><strong>Answer: At least 3 seconds</strong><br>
+                    Keep a 3-second gap from the vehicle ahead. Double this in bad weather.</p>
+                </div>
+                <div class="card">
+                    <h3>17. 🏥 Road Accident</h3>
+                    <p><strong>Answer: Call emergency services and help if safe</strong><br>
+                    First call 100/102/108, then provide basic help if it's safe to do so.</p>
+                </div>
+                <div class="card">
+                    <h3>18. 🌧️ Heavy Rain</h3>
+                    <p><strong>Answer: Reduce speed and increase following distance</strong><br>
+                    Wet roads are slippery. Reduce speed by 30% and double your following distance.</p>
+                </div>
+                <div class="card">
+                    <h3>19. 🚸 Flashing Yellow</h3>
+                    <p><strong>Answer: Pedestrians have right of way, proceed with caution</strong><br>
+                    Slow down and be extra careful. Pedestrians may be crossing.</p>
+                </div>
+                <div class="card">
+                    <h3>20. 🛑 Police Signal</h3>
+                    <p><strong>Answer: Stop immediately and follow instructions</strong><br>
+                    Always obey police instructions. Failure to stop is a serious offense.</p>
+                </div>
+                <div class="card">
+                    <h3>21. 🍺 Alcohol Limit</h3>
+                    <p><strong>Answer: 0.03%</strong><br>
+                    In India, the legal limit is 0.03% (30mg per 100ml of blood).</p>
+                </div>
+                <div class="card">
+                    <h3>22. 🚴 Cyclist Safety</h3>
+                    <p><strong>Answer: Use bike lanes when available and wear helmet</strong><br>
+                    Cyclists should wear helmets and use designated lanes when available.</p>
+                </div>
+                <div class="card">
+                    <h3>23. ⛽ Out of Fuel</h3>
+                    <p><strong>Answer: Move to side and call for help</strong><br>
+                    Move to the roadside safely, turn on hazard lights, and call for assistance.</p>
+                </div>
+                <div class="card">
+                    <h3>24. 👓 Sleepy While Driving</h3>
+                    <p><strong>Answer: Stop at a safe place and rest</strong><br>
+                    Drowsy driving is dangerous. Stop, rest, or switch drivers if possible.</p>
+                </div>
+                <div class="card">
+                    <h3>25. 📖 Long Journey Prep</h3>
+                    <p><strong>Answer: Check vehicle, plan route, and rest well</strong><br>
+                    Check brakes, tires, fuel, and plan your route. Get adequate rest before driving.</p>
+                </div>
             </div>
         </section>
+
+        <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 10px;">
+            <p style="font-size: 1.1rem; font-weight: 600;">Keep Learning and Stay Safe!</p>
+            <p style="margin-top: 0.5rem;">Now that you've tested your knowledge, remember to apply these lessons every time you're on the road.</p>
+            <div style="margin-top: 1rem;">
+                <a href="index.html" class="btn" style="padding: 0.75rem 1.5rem;">🏠 Back to Home</a>
+                <a href="page10.html" class="btn" style="padding: 0.75rem 1.5rem; background: var(--secondary);">✅ Take the Pledge</a>
+            </div>
+        </div>
     </main>
 
     <footer>
