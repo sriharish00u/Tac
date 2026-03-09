@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Awareness Hub – Posters 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Traffic Awareness Hub</h1>
+        <p>Educational Resource for Safer Roads</p>
+    </header>
+
+    <nav>
+        <!-- same nav -->
+    </nav>
+
+    <section>
+        <h2>Posters – Children & School Focus</h2>
+        <div class="poster-grid">
+            <img src="https://i0.wp.com/bethanyinstitutions.edu.in/wp-content/uploads/2024/09/Road-Safety-and-Traffic-Rules.jpeg?fit=1500%2C1000&ssl=1" alt="Road Safety and Traffic Rules for Students">
+            <img src="https://www.safetypostersindia.com/images/traffic-safety-poster-3.jpg" alt="Be Safe – Follow Traffic Rules">
+            <img src="https://www.gettyimages.com/detail/photo/road-safety-poster-royalty-free-image/157307072" alt="Helmet Saves Lives – Child Awareness">
+        </div>
+    </section>
+
+    <footer>
+        <p>Traffic Awareness Hub | Safer Roads for All</p>
+    </footer>
+
+</body>
+</html>
